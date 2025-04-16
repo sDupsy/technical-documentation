@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML, CSS, and JavaScript Docs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar" aria-label="Table of Contents">
+    <header><h1>HTML, CSS, and JavaScript</h1></header>
+    <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+    <a class="nav-link" href="#CSS_Styling">CSS Styling</a>
+    <a class="nav-link" href="#JavaScript_Functionality">JavaScript Functionality</a>
+    <a class="nav-link" href="#DOM_Manipulation">DOM Manipulation</a>
+    <a class="nav-link" href="#Putting_It_All_Together">Putting It All Together</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="HTML_Basics">
+      <header>HTML Basics</header>
+      <p>HTML (HyperText Markup Language) is the foundation of any webpage. It provides the structure and content.</p>
+      <p>Each webpage begins with a basic HTML skeleton that includes elements like head, title, and body.</p>
+      <code>&lt;!DOCTYPE html&gt;</code>
+      <code>&lt;html lang="en"&gt;</code>
+      <code>&lt;head&gt;&lt;/head&gt;</code>
+      <ul>
+        <li>Headings: &lt;h1&gt; to &lt;h6&gt;</li>
+        <li>Paragraphs: &lt;p&gt;</li>
+        <li>Links: &lt;a&gt;</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="CSS_Styling">
+      <header>CSS Styling</header>
+      <p>CSS (Cascading Style Sheets) is used to style and layout HTML elements. It defines colors, spacing, fonts, and more.</p>
+      <p>You can apply CSS inline, internally with a style tag, or externally via a .css file.</p>
+      <code>h1 { color: blue; }</code>
+      <code>p { font-size: 16px; }</code>
+      <ul>
+        <li>Selectors: element, class, ID</li>
+        <li>Properties: color, margin, padding</li>
+        <li>Units: px, em, %, rem</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="JavaScript_Functionality">
+      <header>JavaScript Functionality</header>
+      <p>JavaScript adds interactivity and behavior to web pages. It's the programming language of the web.</p>
+      <p>Common uses include reacting to user actions, validating input, or dynamically updating content.</p>
+      <code>console.log("Hello, world!");</code>
+      <code>document.getElementById("btn").onclick = () =&gt; alert("Clicked!");</code>
+      <ul>
+        <li>Variables: let, const, var</li>
+        <li>Functions: function sayHi() {}</li>
+        <li>Events: click, hover, input</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="DOM_Manipulation">
+      <header>DOM Manipulation</header>
+      <p>The DOM (Document Object Model) is a tree-like structure representing the HTML of a page.</p>
+      <p>JavaScript can use the DOM to read, change, add, or remove elements from the page dynamically.</p>
+      <code>document.querySelector("h1").innerText = "Updated Title";</code>
+      <code>document.body.style.backgroundColor = "lightgray";</code>
+      <ul>
+        <li>querySelector()</li>
+        <li>getElementById()</li>
+        <li>innerText / innerHTML</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Putting_It_All_Together">
+      <header>Putting It All Together</header>
+      <p>HTML, CSS, and JavaScript work together to create complete, functional web experiences.</p>
+      <p>HTML provides structure, CSS adds style, and JavaScript enables interaction.</p>
+      <code>
+        &lt;button id="myBtn"&gt;Click Me&lt;/button&gt;<br />
+        &lt;script&gt;<br />
+        document.getElementById("myBtn").addEventListener("click", function() {<br />
+        alert("Hello!");<br />
+        });<br />
+        &lt;/script&gt;
+      </code>
+      <ul>
+        <li>Use semantic HTML</li>
+        <li>Separate style into CSS</li>
+        <li>Write clean, readable JS</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
